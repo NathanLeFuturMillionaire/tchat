@@ -1,0 +1,135 @@
+/* Add the css fonts */
+@font-face {
+    font-family: "arial-normal";
+    src: url("../../fonts/arial/arial.ttf") format("truetype");
+    font-weight: normal;
+    font-size: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    opacity: 0.8;
+    font-family: 'arial-normal';
+    transition: .3s;
+    background: #ff00008a;
+}
+
+/* Make that all the blocks fit properly */
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+#container {
+    /* padding: 10px; */
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #ff3030ba;
+    border-radius: 5px;
+    overflow-y: scroll;
+    position: fixed;
+    right: 0;
+    bottom: 60px;
+}
+
+#container::-webkit-scrollbar {
+    display: none;
+}
+
+#container header {
+    border-radius: 10px;
+    display: inline-block;
+    background: #ff284d;
+    width: 100%;
+    padding: 3px;
+    position: fixed;
+}
+
+#container header h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 1.3em;
+}
+
+#container header p {
+    margin-top: 0;
+}
+
+#container header ~ section .message {
+    width: 100%;
+    height: auto;
+    margin-top: 102px;
+}
+
+#container .panel {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    transition: .3s;
+}
+
+/* #container .panel:hover {
+    background-color: #ff1515a3;
+} */
+
+#container .panel .informations h3,
+#container .panel .informations h4,
+#container .panel .informations h5 {
+    margin: 0 0 0 5px;
+}
+
+#container .panel .informations h3 {
+    font-size: 1.23em;
+}
+
+#container .panel .informations h4 {
+    font-size: 0.9em;
+}
+
+#container .panel .informations h5 {
+    font-size: 0.8em;
+    color: #027202d2;
+}
+
+#container .link {
+    color: black;
+    text-decoration: none;
+    transition: .3s;
+}
+
+#container footer {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff284d;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#container footer form {
+    display: flex;
+    justify-content: center;
+}
+
+#container footer form input[type="text"] {
+    width: 320px;
+    padding: 5px;
+    border: none;
+    background-color: aliceblue;
+    outline: none;
+}
+
+#container footer fieldset {
+    border: none;
+}
+
+@media screen and (max-width: 900px) {
+    #container {
+        width: 60%;
+    }
+}
