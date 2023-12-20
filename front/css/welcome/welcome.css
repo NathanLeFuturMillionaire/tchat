@@ -1,0 +1,77 @@
+/* Add the css fonts */
+@font-face {
+    font-family: "arial-normal";
+    src: url("../../fonts/arial/arial.ttf") format("truetype");
+    font-weight: normal;
+    font-size: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    opacity: 0.8;
+    font-family: 'arial-normal';
+    transition: .3s;
+}
+
+/* Make that all the blocks fit properly */
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+/* Reduce the container's width and center it */
+#container {
+    width: 45%;
+    height: auto;
+    margin: 1% auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Center the main's header */
+#container > header {
+    text-align: center;
+}
+
+/* Style the inputs */
+#container button[type="submit"] {
+    display: block;
+    width: 180px;
+    padding: 10px;
+    margin: auto;
+    background: #a764ff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.05em;
+    transition: .3s;
+    user-select: none;
+}
+
+#container button[type="submit"]:hover {
+    transition: .3s;
+    background-color: #801eff;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+    background: #7000ff0a;
+}
+
+footer a {
+    text-decoration: none;
+    color: #a764ff;
+}
+
+@media screen and (max-width: 720px) {
+    #container {
+        width: 50%;
+    }
+}
