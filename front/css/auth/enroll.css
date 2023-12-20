@@ -1,0 +1,112 @@
+/* Add the css fonts */
+@font-face {
+    font-family: "arial-normal";
+    src: url("../../fonts/arial/arial.ttf") format("truetype");
+    font-weight: normal;
+    font-size: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    opacity: 0.8;
+    font-family: 'arial-normal';
+    transition: .3s;
+}
+
+/* Make that all the blocks fit properly */
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+/* Reduce the container's width and center it */
+#container {
+    width: 35%;
+    height: auto;
+    margin: 1% auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Center the main's header */
+#container > header {
+    text-align: center;
+}
+
+/* Remove the fieldset borders */
+#container form fieldset {
+    border: none;
+}
+
+#container form fieldset.error {
+    padding: 10px;
+    background: #ff9090;
+    width: 94%;
+    margin: auto;
+    border-radius: 4px;
+    border: 1px red solid;
+}
+
+#container form fieldset.success {
+    padding: 10px;
+    background: #9fff9e;
+    width: 94%;
+    margin: auto;
+    border-radius: 4px;
+    border: 1px #04ff00 solid;
+}
+
+/* Put the input at 100% */
+#container form input[type="text"],
+#container form input[type="password"] {
+    width: 100%;
+}
+/* Style the inputs */
+#container form input[type="text"],
+#container form input[type="password"] {
+    padding: 8px 8px;
+    border: 1px solid #a764ff;
+    outline: none;
+}
+/* Style the inputs */
+#container form button[type="submit"] {
+    display: block;
+    width: 180px;
+    padding: 10px;
+    margin: auto;
+    background: #a764ff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.05em;
+    transition: .3s;
+    user-select: none;
+}
+
+#container form button[type="submit"]:hover {
+    transition: .3s;
+    background-color: #801eff;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+    background: #7000ff0a;
+}
+
+footer a {
+    text-decoration: none;
+    color: #a764ff;
+}
+
+@media screen and (max-width: 720px) {
+    #container {
+        width: 50%;
+    }
+}
